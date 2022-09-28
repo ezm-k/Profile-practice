@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+/* common */
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #383e45;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.site-title {
+  width: 120px;
+  line-height: 1px;
+  padding: 10px 0;
+}
+
+.site-title a {
+  display: block;
+}
+
+.site-title img {
+  width: 120px;
+  height: 40px;
+}
+
+.section-title {
+  display: inline-block;
+  font-size: 32px;
+  margin-bottom: 60px;
+  border-bottom: solid 1px #383e45;
+}
+
+.content-title {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+  padding: 0 4%;
+  text-align: center;
+}
+
+/* header */
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+
+#header li {
+  margin-left: 30px;
+}
+
+#header li a {
+  color: #24292e;
+}
+
+#header li a:hover {
+  opacity: .7;
+}
+
+/* main */
+.main-visual {
+  margin-bottom: 80px;
+}
+
+.main-visual img{
+  width: 100%;
+  max-width: 1920px;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* about */
+
+#about .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+#about .text {
+  text-align: left;
+}
+
+/* items */
+
+#items ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+#items ul li {
+  width: 32%;
+}
+
+#items ul li {
+  width: 32%;
+}
+
+
+/* footer */
+
+#footer {
+  text-align: center;
+  margin: 10px 0;
+}
+
+#footer .footer-text{
+  font-size: 10px;
+}
+
+/* medium screen */
+
+@media (max-width: 600px) {
+
+  /* mein-visual */
+  .main-visual img{
+    height: calc(100vh - 60px);
+  }
+
+  /* about */
+  #about .content  {
+    display: inline-block
+  }
+
+  #about .content img{
+    margin-right: 0;
+  }
+
+  #about {
+    text-align: center;
+  }
+
+  /* items */
+
+  #items ul{
+    flex-direction: column;
+  }
+
+  #items ul li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
